@@ -4,6 +4,7 @@ import java.lang.String;
 import java.lang.Integer;
 import com.billbear.activitydata.open.sdk.bean.shop.ActivityLiteRestDto;
 import java.util.List;
+import java.lang.Double;
 
 /**
  * 
@@ -36,6 +37,16 @@ public class ShopActivityRestDto{
 	
 	@JsonProperty("logoSmall")	
 	private String logoSmall;                 
+    
+ 
+	
+	@JsonProperty("latitude")	
+	private Double latitude;                 
+    
+ 
+	
+	@JsonProperty("longitude")	
+	private Double longitude;                 
     
 
  
@@ -86,6 +97,26 @@ public class ShopActivityRestDto{
 
 	public void setLogoSmall(String logoSmall) {
 		this.logoSmall = logoSmall;
+	}                
+    
+ 
+	
+	public Double getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
+	}                
+    
+ 
+	
+	public Double getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
 	}                
     
 

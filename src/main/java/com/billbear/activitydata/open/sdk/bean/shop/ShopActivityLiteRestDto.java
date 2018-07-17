@@ -2,13 +2,15 @@ package com.billbear.activitydata.open.sdk.bean.shop;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.lang.String;
 import java.lang.Integer;
+import com.billbear.activitydata.open.sdk.bean.shop.ActivityLiteRestDto;
+import java.util.List;
 
 /**
  * 
  * @author billbear.sdk.tool
  *
  */
-public class ShopLiteRestDto{
+public class ShopActivityLiteRestDto{
 
  
 	
@@ -22,18 +24,18 @@ public class ShopLiteRestDto{
     
  
 	
+	@JsonProperty("acts")	
+	private List<ActivityLiteRestDto> acts;                 
+    
+ 
+	
 	@JsonProperty("shopName")	
 	private String shopName;                 
     
  
 	
-	@JsonProperty("address")	
-	private String address;                 
-    
- 
-	
-	@JsonProperty("tel")	
-	private String tel;                 
+	@JsonProperty("logoSmall")	
+	private String logoSmall;                 
     
 
  
@@ -58,6 +60,16 @@ public class ShopLiteRestDto{
     
  
 	
+	public List<ActivityLiteRestDto> getActs() {
+		return acts;
+	}
+
+	public void setActs(List<ActivityLiteRestDto> acts) {
+		this.acts = acts;
+	}                
+    
+ 
+	
 	public String getShopName() {
 		return shopName;
 	}
@@ -68,22 +80,12 @@ public class ShopLiteRestDto{
     
  
 	
-	public String getAddress() {
-		return address;
+	public String getLogoSmall() {
+		return logoSmall;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
-	}                
-    
- 
-	
-	public String getTel() {
-		return tel;
-	}
-
-	public void setTel(String tel) {
-		this.tel = tel;
+	public void setLogoSmall(String logoSmall) {
+		this.logoSmall = logoSmall;
 	}                
     
 
