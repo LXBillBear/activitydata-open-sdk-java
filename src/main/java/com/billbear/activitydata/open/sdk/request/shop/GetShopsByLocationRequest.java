@@ -5,7 +5,8 @@ import java.util.TreeMap;
 import com.billbear.activitydata.open.sdk.util.JsonUtil;
 import com.billbear.activitydata.open.sdk.request.BaseRequest;
 import java.lang.Double;
-import java.lang.Long;
+import java.lang.String;
+import java.util.Date;
 import com.billbear.activitydata.open.sdk.response.shop.GetShopsByLocationResponse;
 
 /**
@@ -22,7 +23,13 @@ public class GetShopsByLocationRequest extends BaseRequest<GetShopsByLocationRes
 	private Double longitude;                 
     
  
-	private Long id;                 
+	private String bankName;                 
+    
+ 
+	private String category;                 
+    
+ 
+	private Date date;                 
     
 
  
@@ -50,12 +57,34 @@ public class GetShopsByLocationRequest extends BaseRequest<GetShopsByLocationRes
  
 
   	
-	public Long getId() {
-		return id;
+	public String getBankName() {
+		return bankName;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}                
+    
+ 
+
+  	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}                
+    
+ 
+
+  	
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}                
     
 	
@@ -70,7 +99,9 @@ public class GetShopsByLocationRequest extends BaseRequest<GetShopsByLocationRes
 		Map<String, Object> map = new TreeMap<String,Object>();
 	    map.put("latitude", this.getLatitude());
 	    map.put("longitude", this.getLongitude());
-	    map.put("id", this.getId());
+	    map.put("bank_name", this.getBankName());
+	    map.put("category", this.getCategory());
+	    map.put("date", this.getDate());
 	    return JsonUtil.toJson(map);
 	}
 

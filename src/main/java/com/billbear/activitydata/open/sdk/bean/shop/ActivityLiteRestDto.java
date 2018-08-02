@@ -24,6 +24,16 @@ public class ActivityLiteRestDto{
 	@JsonProperty("bankName")	
 	private String bankName;                 
     
+ 
+	
+	@JsonProperty("category")	
+	private String category;                 
+    
+ 
+	
+	@JsonProperty("availableTime")	
+	private String availableTime;                 
+    
 
  
 	
@@ -53,6 +63,26 @@ public class ActivityLiteRestDto{
 
 	public void setBankName(String bankName) {
 		this.bankName = bankName;
+	}                
+    
+ 
+	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}                
+    
+ 
+	
+	public String getAvailableTime() {
+		return availableTime;
+	}
+
+	public void setAvailableTime(String availableTime) {
+		this.availableTime = availableTime;
 	}                
     
 
