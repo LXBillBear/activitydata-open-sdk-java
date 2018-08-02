@@ -47,6 +47,11 @@ public class ActivityDetailRestDto{
     
  
 	
+	@JsonProperty("category")	
+	private String category;                 
+    
+ 
+	
 	@JsonProperty("subjectDescription")	
 	private String subjectDescription;                 
     
@@ -134,6 +139,16 @@ public class ActivityDetailRestDto{
 
 	public void setContent(String content) {
 		this.content = content;
+	}                
+    
+ 
+	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}                
     
  
