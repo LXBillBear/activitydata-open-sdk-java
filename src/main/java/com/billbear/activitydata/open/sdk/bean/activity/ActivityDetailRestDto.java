@@ -70,6 +70,11 @@ public class ActivityDetailRestDto{
 	@JsonProperty("endDate")	
 	private Date endDate;                 
     
+ 
+	
+	@JsonProperty("cityNames")	
+	private String cityNames;                 
+    
 
  
 	
@@ -189,6 +194,16 @@ public class ActivityDetailRestDto{
 
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
+	}                
+    
+ 
+	
+	public String getCityNames() {
+		return cityNames;
+	}
+
+	public void setCityNames(String cityNames) {
+		this.cityNames = cityNames;
 	}                
     
 

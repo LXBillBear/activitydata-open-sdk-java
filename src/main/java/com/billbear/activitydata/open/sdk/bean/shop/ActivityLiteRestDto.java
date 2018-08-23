@@ -31,6 +31,11 @@ public class ActivityLiteRestDto{
     
  
 	
+	@JsonProperty("bigImgUrl")	
+	private String bigImgUrl;                 
+    
+ 
+	
 	@JsonProperty("availableTime")	
 	private String availableTime;                 
     
@@ -73,6 +78,16 @@ public class ActivityLiteRestDto{
 
 	public void setCategory(String category) {
 		this.category = category;
+	}                
+    
+ 
+	
+	public String getBigImgUrl() {
+		return bigImgUrl;
+	}
+
+	public void setBigImgUrl(String bigImgUrl) {
+		this.bigImgUrl = bigImgUrl;
 	}                
     
  
